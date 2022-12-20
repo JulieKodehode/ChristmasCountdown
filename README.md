@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Juleoppgave (Utdelt: 19.12.22 Frist: 12. jan. 2023)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- Kopiert fra google classroom -->
 
-## Available Scripts
+Hei alle sammen!
 
-In the project directory, you can run:
+Her kommer juleprosjektet, det skal løses alene. Dette er en ypperlig oppgave til portfolien og en artig oppgave å bryne hodet på. Fristen er satt til 12.januar, så dere har mer enn nok tid på å gjennomføre den.
 
-### `npm start`
+Om du har lyst til å legge til elementer utover det som er nevnt i oppgavetekster står du fritt til å gjøre det.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I tillegg til oppgaven ønsker vi at dere leverer en prosjektplan som skal svare på følgende punker;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Hva skal du inkludere på siden?
+-Hvilke elementer må du ha med?
+-Hva ønsker dere å oppnå med siden?
+-Hvordan skal legge opp arbeidet på prosjektet?
 
-### `npm test`
+Vi ønsker også at dere legger ved en figma-fil på prosjektet.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Modul D + Modul E:
+Lag en “Nedtelling til jul!” side med en gjestebok/kommentarfelt i React
 
-### `npm run build`
+Elementer som skal med:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+● Countdown timer til jul som teller ned baklengs med dager, timer og
+sekunder til jul
+● Inputfelt hvor bruker kan skrive inn en julehilsen, som lagres i
+localstorage og vises på siden med en timestamp
+● Juletema (Julerelaterte bilder, designelementer, farger og fonter)
+Fokus er på React, håndtering av state og bruk av komponenter, samt ryddig
+design og layout.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Lykke til!
