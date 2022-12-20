@@ -25,6 +25,7 @@ Modul D + Modul E:
 Lag en “Nedtelling til jul!” side med en gjestebok/kommentarfelt i React
 
 Elementer som skal med:
+
 ● Countdown timer til jul som teller ned baklengs med dager, timer og
 sekunder til jul
 
