@@ -21,7 +21,8 @@ I tillegg til oppgaven ønsker vi at dere leverer en prosjektplan som skal svare
 
 Vi ønsker også at dere legger ved en figma-fil på prosjektet.
 
-Modul D + Modul E:
+## Modul D + Modul E:
+
 Lag en “Nedtelling til jul!” side med en gjestebok/kommentarfelt i React
 
 Elementer som skal med:
