@@ -1,4 +1,5 @@
-# Juleoppgave 
+# Juleoppgave
+
 (Utdelt: 19.12.22 Frist: 12. jan. 2023)
 
 <!-- Kopiert fra google classroom -->
@@ -11,13 +12,13 @@ Om du har lyst til å legge til elementer utover det som er nevnt i oppgavetekst
 
 I tillegg til oppgaven ønsker vi at dere leverer en prosjektplan som skal svare på følgende punker;
 
--Hva skal du inkludere på siden?
+- Hva skal du inkludere på siden?
 
--Hvilke elementer må du ha med?
+- Hvilke elementer må du ha med?
 
--Hva ønsker dere å oppnå med siden?
+- Hva ønsker dere å oppnå med siden?
 
--Hvordan skal legge opp arbeidet på prosjektet?
+- Hvordan skal legge opp arbeidet på prosjektet?
 
 Vi ønsker også at dere legger ved en figma-fil på prosjektet.
 
@@ -27,14 +28,14 @@ Lag en “Nedtelling til jul!” side med en gjestebok/kommentarfelt i React
 
 Elementer som skal med:
 
-● Countdown timer til jul som teller ned baklengs med dager, timer og
-sekunder til jul
+- Countdown timer til jul som teller ned baklengs med dager, timer og
+  sekunder til jul
 
-● Inputfelt hvor bruker kan skrive inn en julehilsen, som lagres i
-localstorage og vises på siden med en timestamp
+- Inputfelt hvor bruker kan skrive inn en julehilsen, som lagres i
+  localstorage og vises på siden med en timestamp
 
-● Juletema (Julerelaterte bilder, designelementer, farger og fonter)
-Fokus er på React, håndtering av state og bruk av komponenter, samt ryddig
-design og layout.
+- Juletema (Julerelaterte bilder, designelementer, farger og fonter)
+  Fokus er på React, håndtering av state og bruk av komponenter, samt ryddig
+  design og layout.
 
 Lykke til!
