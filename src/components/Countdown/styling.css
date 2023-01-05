@@ -1,0 +1,30 @@
+/* The countdown "frame" */
+.countdownLink {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em;
+	color: #000;
+}
+
+/* Each individual count down pair */
+.showCounter .countdown {
+	line-height: 1.25rem;
+	padding: 0 0.75rem 0 0.75rem;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+/* The value that is counted down */
+.showCounter .countdown > p {
+	margin: 0;
+}
+
+/* How the type is displayed on countdown */
+.showCounter .countdown > span {
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	line-height: 1rem;
+}

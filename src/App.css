@@ -1,0 +1,36 @@
+/* General */
+.mainPage {
+	width: 500px;
+	height: 500px;
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 10px black solid;
+	border-radius: 1.5em;
+}
+
+/* Just temporary */
+.messageBox {
+	height: 80px;
+	width: 400px;
+	background-color: green;
+}
+
+/* Typography */
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap");
+/* https://fonts.google.com/specimen/Mountains+of+Christmas?query=christmas */
+
+.heading,
+.subHeading {
+	font-family: "Mountains of Christmas", cursive;
+}
+
+.heading {
+	font-size: 46px;
+}
+
+.subHeading {
+	font-size: 32px;
+}

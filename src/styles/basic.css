@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+/* https://fonts.google.com/specimen/Roboto */
+
+* {
+	box-sizing: border-box;
+	color: black;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+	background: linear-gradient(to left, #b31217, #e52d27);
+	margin: 0;
+
+	/* Questionable */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
