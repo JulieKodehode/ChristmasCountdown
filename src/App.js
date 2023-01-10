@@ -7,6 +7,7 @@ import "./App.css";
 
 // Components
 import CountdownTimer from "./components/Countdown/CountdownTimer";
+import MessageToSanta from "./components/Message/MessageToSanta";
 
 /**
  * Where everything gets connected.
@@ -27,13 +28,13 @@ const App = () => {
 	return (
 		<main className="mainPage">
 			<section className="countdown">
-				<h1 className="heading">Countdown to Christmas</h1>
+				<h1 className="heading">Nedtelling til jul</h1>
 				<CountdownTimer targetDate={christmasTime} />
 			</section>
 
 			<section className="message">
-				<h3 className="subHeading">Leave a message for Santa</h3>
-				<p className="messageBox">{/* MESSAGE COMPONENT */}</p>
+				<h3 className="subHeading">Legg igjen en beskjed til julenissen</h3>
+				<MessageToSanta />
 			</section>
 		</main>
 	);
