@@ -6,15 +6,23 @@
 	align-items: center;
 	padding: 0.5em;
 	color: #000;
+	gap: 1em; /*Gap between the "jingles"*/
 }
 
 /* Each individual count down pair */
 .showCounter .countdown {
-	line-height: 1.25rem;
-	padding: 0 0.75rem 0 0.75rem;
+	line-height: 1.25em;
+	padding-inline: 0.75em; /*Left-right*/
+	justify-content: center;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+
+	/* Round background */
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: white;
 }
 
 /* The value that is counted down */
