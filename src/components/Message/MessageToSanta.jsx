@@ -1,75 +1,80 @@
 // Libraries
-import React, { useRef } from "react";
-// Styling
+import React, { useState, useEffect } from "react";
+
+// Style
 import "./styling.css";
 
-// Components
-import { useLocalStorage } from "../../hooks/useLocalStorage";
+function MessageToSanta() {
+	const [message, setMessage] = useState([]);
+	const [newMessage, setNewMessage] = useState("");
 
-const DisplayMessage = () => {
-	// Getting the data from local storage to display it
-	// let name = localStorage.getItem(name);
-	// let message = localStorage.getItem(message);
+	// To get the time for the message
+	const timestamp = new Date().toDateString();
 
-	return (
-		//EXAMPLE SOMETHING LIKE THIS
-		<main>
-			<p>
-				<i>Julie 10:29, 10.01.23 - </i>
-				<b>Velkommen til nedtelling!</b>
-			</p>
-			{/* <p>{name}</p>
-			<p>{message}</p> */}
-		</main>
-	);
-};
+	// Getting a saved message from local storage
+	const savedMessage = (newMessages) => {
+		localStorage.setItem("message", JSON.stringify(newMessages));
+	};
 
-const MessageToSanta = () => {
-	// useLocalStorage to get the component from hooks
-	const [name, setName] = useLocalStorage("name", "");
-	const [message, setMessage] = useLocalStorage("message", "");
+	useEffect(() => {
+		if (localStorage.getItem("message")) {
+			setMessage(JSON.parse(localStorage.getItem("message")));
+		}
+	}, []);
 
-	// useRef to use .current
-	const nameRef = useRef(null);
-	const messageRef = useRef(null);
+	// Adding the message to the display board
+	// .trim() bak newMessage deleted
+	const addMessage = () => {
+		if (newMessage.trim()) {
+			let newMessages = [...message, { message: newMessage, id: Date.now() }];
+			setMessage(newMessages);
+			setNewMessage("");
+			savedMessage(newMessages);
+		}
+	};
 
-	// A handle to prevent the page from refreshing on submit, and to clear the input fields after submit.
-	const handleSubmit = (event) => {
-		console.log("handleSubmit ran");
-		event.preventDefault();
-		event.target.reset();
-
-		nameRef.current.value = "";
-		messageRef.current.value = "";
+	// Deleting a message from the display board
+	const deleteMessage = (id) => {
+		let newMessages = message.filter((message) => message.id !== id);
+		setMessage(newMessages);
+		savedMessage(newMessages);
 	};
 
 	return (
 		<main>
-			<form className="formMessage" onSubmit={handleSubmit}>
+			{/* Using a form because an input is a form element. */}
+			<form>
 				<input
-					className="formName"
 					type="text"
-					placeholder="Skriv navnet ditt her.."
-					//
-					ref={nameRef}
-					value={name}
-					onChange={(event) => setName(event.target.value)}></input>
-				<textarea
-					className="formText"
-					cols="60"
-					rows="5"
-					placeholder="Skriv beskjeden din her.."
-					//
-					ref={messageRef}
-					value={message}
-					onChange={(event) => setMessage(event.target.value)}></textarea>
-				<input className="formSubmit" type="submit"></input>
+					placeholder="Skriv en hilsen til julenissen!"
+					value={newMessage}
+					onChange={(event) => setNewMessage(event.target.value)}
+				/>
+
+				<button onClick={addMessage}>Send hilsen</button>
 			</form>
 
-			{/* Displaying the message with date and name stamp */}
-			<DisplayMessage name={name} message={message} />
+			{/* Using a table to display side by side */}
+			{/* MAYBE CHANGE TABLE??? */}
+			<table>
+				<tbody>
+					{/* Using a map anon function to run through the messages and finding the correct message id to delete */}
+					{message.map((message) => (
+						<tr key={message.id}>
+							<td>
+								{timestamp}
+								{/* Need CSS TO GIVE SPACE */}
+								{message.message}
+							</td>
+							<td>
+								<button onClick={() => deleteMessage(message.id)}>Slett hilsen</button>
+							</td>
+						</tr>
+					))}
+				</tbody>
+			</table>
 		</main>
 	);
-};
+}
 
 export default MessageToSanta;
