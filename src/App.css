@@ -1,7 +1,7 @@
 /* General */
 .mainPage {
-	width: 100%; /*Questionable*/
-	height: 100%; /*Questionable*/
+	max-width: 600px;
+	height: auto; /*Questionable*/
 
 	background: linear-gradient(to left, #b31217, #e52d27);
 	overflow: hidden;
@@ -11,7 +11,7 @@
 	justify-content: center;
 	align-items: center;
 
-	padding-inline: 1em; /*Left and right*/
+	padding: 1em;
 	border: 10px black solid;
 	border-radius: 1.5em;
 }
@@ -27,8 +27,10 @@
 
 .heading {
 	font-size: 46px;
+	margin: 0 0 16px 0;
 }
 
 .subHeading {
 	font-size: 32px;
+	margin: 20px 0 16px 0;
 }

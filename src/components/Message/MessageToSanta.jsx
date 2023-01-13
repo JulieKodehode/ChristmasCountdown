@@ -41,37 +41,40 @@ function MessageToSanta() {
 	};
 
 	return (
-		<main>
+		<main className="messageDisplay">
 			{/* Using a form because an input is a form element. */}
-			<form>
-				<input
-					type="text"
+			<form className="messageForm">
+				<textarea
+					type="textarea"
+					className="textarea"
+					rows="4"
+					cols="50"
 					placeholder="Skriv en hilsen til julenissen!"
 					value={newMessage}
 					onChange={(event) => setNewMessage(event.target.value)}
 				/>
 
-				<button onClick={addMessage}>Send hilsen</button>
+				<button className="button" onClick={addMessage}>
+					Send hilsen
+				</button>
 			</form>
 
-			{/* Using a table to display side by side */}
-			{/* MAYBE CHANGE TABLE??? */}
-			<table>
-				<tbody>
-					{/* Using a map anon function to run through the messages and finding the correct message id to delete */}
-					{message.map((message) => (
-						<tr key={message.id}>
+			{/* Using a table to display the timestamp, message and button */}
+			<table className="messageList">
+				{/* Using a map anon function to run through the messages and finding the correct message id to delete */}
+				{message.map((message) => (
+					<tbody key={message.id}>
+						<tr>
+							<td>{timestamp}:</td>
+							<td>{message.message}</td>
 							<td>
-								{timestamp}
-								{/* Need CSS TO GIVE SPACE */}
-								{message.message}
-							</td>
-							<td>
-								<button onClick={() => deleteMessage(message.id)}>Slett hilsen</button>
+								<button className="button" onClick={() => deleteMessage(message.id)}>
+									Slett hilsen
+								</button>
 							</td>
 						</tr>
-					))}
-				</tbody>
+					</tbody>
+				))}
 			</table>
 		</main>
 	);

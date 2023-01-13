@@ -4,7 +4,6 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 0.5em;
 	color: #000;
 	gap: 1em; /*Gap between the "jingles"*/
 }
@@ -12,7 +11,6 @@
 /* Each individual count down pair */
 .showCounter .countdown {
 	line-height: 1.25em;
-	padding-inline: 0.75em; /*Left-right*/
 	justify-content: center;
 	align-items: center;
 	display: flex;

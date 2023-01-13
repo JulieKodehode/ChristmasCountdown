@@ -1,0 +1,61 @@
+.messageDisplay {
+	/* background-color: blue; */
+
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.messageDisplay button {
+	margin: auto;
+}
+
+.messageForm {
+	/* background-color: green; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.5em; /*8px*/
+}
+
+.messageForm textarea {
+	border-radius: 15px;
+	resize: none;
+}
+
+.messageList {
+	/* background-color: green; */
+	display: flex;
+	flex-direction: column;
+	max-height: 100px;
+	overflow-y: auto;
+}
+
+/* To make the date stand out */
+.messageList td:nth-child(1) {
+	opacity: 80%;
+	text-transform: uppercase;
+}
+
+/* To make the message appear with the breaks */
+.messageList td:nth-child(2) {
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+/* Button */
+.button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	background: white;
+
+	border-radius: 40px;
+	border: 2px solid white;
+}
+
+.button:where(:hover, :focus, :active) {
+	border: 2px solid black;
+}
