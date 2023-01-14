@@ -10,11 +10,22 @@
 
 html,
 body {
-	background: linear-gradient(to left, #b31217, #e52d27);
+	background-image: url("../assets/svgChristmasBackground.png"); /*NEEDS AN EDIT IN FIGMA*/
+	background-size: cover;
 	margin: 0;
 
 	/* Questionable */
+	height: 100vh;
+	width: 100%; /*Even more questionable lmao*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+/* Mobile gets linear background. */
+@media screen and (max-width: 425px) {
+	html,
+	body {
+		background: linear-gradient(to left, #b31217, #e52d27);
+	}
 }

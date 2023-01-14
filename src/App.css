@@ -1,21 +1,19 @@
 /* General */
 .mainPage {
-	width: 500px;
-	height: 500px;
-	padding: 1.5em;
+	max-width: 600px;
+	height: auto; /*Questionable*/
+
+	background: linear-gradient(to left, #b31217, #e52d27);
+	overflow: hidden;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	padding: 1em;
 	border: 10px black solid;
 	border-radius: 1.5em;
-}
-
-/* Just temporary */
-.messageBox {
-	height: 80px;
-	width: 400px;
-	background-color: green;
 }
 
 /* Typography */
@@ -29,8 +27,10 @@
 
 .heading {
 	font-size: 46px;
+	margin: 0 0 16px 0;
 }
 
 .subHeading {
 	font-size: 32px;
+	margin: 20px 0 16px 0;
 }
