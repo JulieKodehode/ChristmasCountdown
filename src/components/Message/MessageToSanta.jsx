@@ -41,14 +41,12 @@ function MessageToSanta() {
 	};
 
 	return (
-		<main className="messageDisplay">
+		<section className="messageDisplay">
 			{/* Using a form because an input is a form element. */}
 			<form className="messageForm">
 				<textarea
 					type="textarea"
 					className="textarea"
-					rows="4"
-					cols="50"
 					placeholder="Skriv en hilsen til julenissen!"
 					value={newMessage}
 					onChange={(event) => setNewMessage(event.target.value)}
@@ -76,7 +74,7 @@ function MessageToSanta() {
 					</tbody>
 				))}
 			</table>
-		</main>
+		</section>
 	);
 }
 
