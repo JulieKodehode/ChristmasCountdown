@@ -1,36 +1,34 @@
-/* The countdown "frame" */
-/* .countdownLink {
+/* The value and type set up */
+.dateTimeDisplay {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: #000;
-	gap: 1em; Gap between the "jingles"
-} */
-
-/* Each individual count down pair
-.showCounter .countdown {
-	line-height: 1.25em;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	flex-direction: column; */
-
-/* Round background */
-/* width: 80px;
+	width: 80px;
 	height: 80px;
 	border-radius: 50%;
-	background-color: white;
-} */
+	background-color: #fff;
+	margin: 1em;
+}
 
-/* The value that is counted down */
-/* .showCounter .countdown > p {
-	margin: 0;
-} */
+/* The main countdown display */
+.countdownDisplay {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	place-items: center;
+}
 
-/* How the type is displayed on countdown */
-/* .showCounter .countdown > span {
+/* Main countdown display p to change the type */
+.countdownDisplay p {
 	text-transform: uppercase;
 	font-size: 0.75rem;
 	line-height: 1rem;
-} */
+}
+
+/* Responsive */
+/* Mobile - S(320), M(375px), L(425px)  */
+@media screen and (max-width: 426px) {
+	.countdownDisplay {
+		grid-template-columns: auto auto;
+	}
+}
