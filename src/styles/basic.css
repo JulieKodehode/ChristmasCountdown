@@ -9,10 +9,16 @@
 	padding: 0;
 }
 
-html,
-body {
+html {
 	background-image: url("../assets/svgChristmasBackground.png");
 	background-size: cover;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 main {
@@ -22,8 +28,8 @@ main {
 /* Responsive */
 /* Mobile - S(320), M(375px), L(425px)  */
 @media screen and (max-width: 426px) {
-	html,
 	body {
+		height: 100%;
 		background: linear-gradient(to left, #b31217, #e52d27);
 	}
 }

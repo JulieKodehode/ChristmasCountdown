@@ -1,50 +1,53 @@
-/* .messageDisplay {
-	background-color: blue;
-
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
-} */
-
-/* .messageDisplay button {
-	margin: auto;
-} */
-
-/* .messageForm {
-	background-color: green;
+/* The message from TOP */
+.messageForm {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 0.5em; 8px
-} */
+	gap: 0.5em;
+	margin: 1em;
+}
 
-/* .messageForm textarea {
+/* Textarea no resize */
+.messageForm textarea {
 	border-radius: 15px;
 	resize: none;
-} */
+	text-align: center;
+	height: 50px;
+}
 
-/* .messageList { */
-/* background-color: green; */
-/* display: flex;
+/* Giving the messageList scroll */
+.messageList {
+	display: flex;
 	flex-direction: column;
 	max-height: 100px;
 	overflow-y: auto;
-} */
+}
 
 /* To make the date stand out */
-/* .messageList td:nth-child(1) {
+.messageList td:nth-child(1) {
 	opacity: 80%;
 	text-transform: uppercase;
-} */
+}
 
 /* To make the message appear with the breaks */
-/* .messageList td:nth-child(2) {
+.messageList td:nth-child(2) {
 	white-space: pre-wrap;
 	overflow-wrap: break-word;
-} */
+}
+
+/* The message display BOTTOM */
+.messageDisplay {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.messageDisplay button {
+	margin: auto;
+}
 
 /* Button */
-/* .button {
+.button {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -56,6 +59,7 @@
 	border: 2px solid white;
 }
 
+/* New psuedo to tag multiple psuedo at the same time */
 .button:where(:hover, :focus, :active) {
 	border: 2px solid black;
-} */
+}
