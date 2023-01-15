@@ -29,7 +29,7 @@ main {
 /* Mobile - S(320), M(375px), L(425px)  */
 @media screen and (max-width: 426px) {
 	body {
-		height: 100%;
+		min-height: 482px;
 		background: linear-gradient(to left, #b31217, #e52d27);
 	}
 }
