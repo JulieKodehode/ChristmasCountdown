@@ -1,36 +1,36 @@
 /* The countdown "frame" */
-.countdownLink {
+/* .countdownLink {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	color: #000;
-	gap: 1em; /*Gap between the "jingles"*/
-}
+	gap: 1em; Gap between the "jingles"
+} */
 
-/* Each individual count down pair */
+/* Each individual count down pair
 .showCounter .countdown {
 	line-height: 1.25em;
 	justify-content: center;
 	align-items: center;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column; */
 
-	/* Round background */
-	width: 80px;
+/* Round background */
+/* width: 80px;
 	height: 80px;
 	border-radius: 50%;
 	background-color: white;
-}
+} */
 
 /* The value that is counted down */
-.showCounter .countdown > p {
+/* .showCounter .countdown > p {
 	margin: 0;
-}
+} */
 
 /* How the type is displayed on countdown */
-.showCounter .countdown > span {
+/* .showCounter .countdown > span {
 	text-transform: uppercase;
 	font-size: 0.75rem;
 	line-height: 1rem;
-}
+} */

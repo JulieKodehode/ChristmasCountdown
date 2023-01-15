@@ -1,50 +1,50 @@
-.messageDisplay {
-	/* background-color: blue; */
+/* .messageDisplay {
+	background-color: blue;
 
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-}
+} */
 
-.messageDisplay button {
+/* .messageDisplay button {
 	margin: auto;
-}
+} */
 
-.messageForm {
-	/* background-color: green; */
+/* .messageForm {
+	background-color: green;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 0.5em; /*8px*/
-}
+	gap: 0.5em; 8px
+} */
 
-.messageForm textarea {
+/* .messageForm textarea {
 	border-radius: 15px;
 	resize: none;
-}
+} */
 
-.messageList {
-	/* background-color: green; */
-	display: flex;
+/* .messageList { */
+/* background-color: green; */
+/* display: flex;
 	flex-direction: column;
 	max-height: 100px;
 	overflow-y: auto;
-}
+} */
 
 /* To make the date stand out */
-.messageList td:nth-child(1) {
+/* .messageList td:nth-child(1) {
 	opacity: 80%;
 	text-transform: uppercase;
-}
+} */
 
 /* To make the message appear with the breaks */
-.messageList td:nth-child(2) {
+/* .messageList td:nth-child(2) {
 	white-space: pre-wrap;
 	overflow-wrap: break-word;
-}
+} */
 
 /* Button */
-.button {
+/* .button {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -58,4 +58,4 @@
 
 .button:where(:hover, :focus, :active) {
 	border: 2px solid black;
-}
+} */
