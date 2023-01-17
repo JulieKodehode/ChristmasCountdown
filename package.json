@@ -1,6 +1,6 @@
 {
-	"name": "christmascountdown",
-	"homepage": "https://juliekodehode.github.io/christmascountdown/",
+	"name": "countdown",
+	"homepage": "https://juliekodehode.github.io/countdown/",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
